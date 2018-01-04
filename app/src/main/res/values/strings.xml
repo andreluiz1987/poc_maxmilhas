@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">poc_maxmilhas</string>
+    <string name="iata_origin_hint">IATA Origem</string>
+    <string name="iata_destination_hint">IATA Destino</string>
+    <string name="date_from_hint">Data da ida</string>
+    <string name="date_return_hint">Data da volta</string>
+    <string name="quantity_passenger_hint">Quantidade de passageiros</string>
+    <string name="label_search">Pesquisar passagem</string>
+
+    <string name="title_alert">Aviso</string>
+    <string name="iata_origin_empty">Informe a origem.</string>
+    <string name="iata_destination_empty">Informe o destino.</string>
+    <string name="passenger_empty">Informe pelo menos 1 passageiro.</string>
+
+</resources>

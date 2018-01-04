@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#EDF3F8">
+
+    <ImageView
+        android:id="@+id/img_banner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:background="@drawable/banner"
+        android:contentDescription="@string/iata_origin_hint" />
+
+    <EditText
+        android:id="@+id/txt_iata_origin"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:layout_below="@+id/img_banner"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="19dp"
+        android:layout_marginRight="19dp"
+        android:layout_marginTop="22dp"
+        android:background="@drawable/textview_base_bg"
+        android:drawableRight="@drawable/pin"
+        android:gravity="start|center"
+        android:hint="@string/iata_origin_hint"
+        android:paddingLeft="15dp"
+        android:paddingRight="10dp" />
+
+    <EditText
+        android:id="@+id/txt_iata_destination"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:layout_below="@+id/txt_iata_origin"
+        android:layout_marginLeft="19dp"
+        android:layout_marginRight="19dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/textview_base_bg"
+        android:drawableRight="@drawable/pin"
+        android:gravity="start|center"
+        android:hint="@string/iata_destination_hint"
+        android:paddingLeft="15dp"
+        android:paddingRight="10dp" />
+
+    <LinearLayout
+        android:id="@+id/pnl_dates"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/txt_iata_destination"
+        android:layout_alignEnd="@+id/txt_iata_destination"
+        android:layout_below="@+id/txt_iata_destination"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/txt_date_initial"
+            android:layout_width="150dp"
+            android:layout_height="54dp"
+            android:layout_below="@+id/txt_iata_origin"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/textview_base_bg"
+            android:drawableRight="@drawable/calendario"
+            android:gravity="start|center"
+            android:hint="@string/date_from_hint"
+            android:paddingLeft="15dp"
+            android:paddingRight="10dp" />
+
+        <EditText
+            android:id="@+id/txt_date_return"
+            android:layout_width="150dp"
+            android:layout_height="54dp"
+            android:layout_below="@+id/txt_iata_origin"
+            android:layout_marginLeft="22dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/textview_base_bg"
+            android:drawableRight="@drawable/calendario"
+            android:gravity="start|center"
+            android:hint="@string/date_return_hint"
+            android:paddingLeft="15dp"
+            android:paddingRight="10dp" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/txt_passenger"
+        android:layout_width="match_parent"
+        android:layout_height="54dp"
+        android:layout_below="@+id/pnl_dates"
+        android:layout_marginLeft="19dp"
+        android:layout_marginRight="19dp"
+        android:layout_marginTop="15dp"
+        android:background="@drawable/textview_base_bg"
+        android:drawableRight="@drawable/passageiros"
+        android:gravity="start|center"
+        android:hint="@string/quantity_passenger_hint"
+        android:inputType="number"
+        android:paddingLeft="15dp"
+        android:paddingRight="10dp" />
+
+    <Button
+        android:id="@+id/btn_search_ticket"
+        style="@style/StyleButtonSearch"
+        android:textAllCaps="false"
+        android:background="@drawable/button_base_bg"
+        android:layout_width="339dp"
+        android:layout_height="55dp"
+        android:layout_marginLeft="19dp"
+        android:layout_marginRight="19dp"
+        android:layout_below="@+id/txt_passenger"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:text="@string/label_search" />
+
+</RelativeLayout>
